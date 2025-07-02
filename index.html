@@ -1,15 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LumoBoard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="logo">L</div>
-  <h1>Welcome to LumoBoard</h1>
-  <p>Your intelligent productivity assistant — built to wake you up, guide your day, and power your purpose. Always-on. Always evolving.</p>
+  <!-- Intro Animation -->
+  <div class="intro-overlay">
+    <img src="halo.png" alt="Lumo Halo" class="halo-logo" />
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="logo.png" alt="Lumo Logo" class="logo" />
+    <h1>Bring Order to Your Day — Elegantly.</h1>
+    <p class="subhead">The LumoBoard: Your AI-Powered Daily Assistant</p>
+    <a href="#features" class="cta-button">Learn More</a>
+    <img src="home.png" alt="LumoBoard in a modern home" class="hero-image" />
+  </section>
+
+  <!-- Scroll Section: Features with Mockups -->
+  <section class="features" id="features">
+    <div class="feature-block">
+      <img src="home.png" alt="Lumo in Living Room" class="feature-img" />
+      <div class="feature-text">
+        <h2>Seamless Scheduling</h2>
+        <p>Sync your calendar and stay on track — all from your wall.</p>
+      </div>
+    </div>
+
+    <div class="feature-block reverse">
+      <img src="home.png" alt="Lumo in Office" class="feature-img" />
+      <div class="feature-text">
+        <h2>Daily Quotes & Reminders</h2>
+        <p>Get inspired every morning with curated motivation and voice-activated prompts.</p>
+      </div>
+    </div>
+
+    <div class="feature-block">
+      <img src="home.png" alt="Lumo by Entryway" class="feature-img" />
+      <div class="feature-text">
+        <h2>Wake Up Right</h2>
+        <p>Use Lumo’s alarm and morning animations to start your day focused and refreshed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lumo Technologies. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.addEventListener("load", () => {
+      const overlay = document.querySelector('.intro-overlay');
+      setTimeout(() => {
+        overlay.classList.add('hide');
+      }, 2000);
+    });
+  </script>
 </body>
 </html>
