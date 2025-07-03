@@ -3,63 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LumoBoard</title>
+  <title>LumoBoard AI</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Intro Animation -->
-  <div class="intro-overlay">
-    <img src="halo.png" alt="Lumo Halo" class="halo-logo" />
-  </div>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>LumoBoard AI</h1>
+      <p>Your intelligent wall assistant. Schedule. Motivate. Simplify.</p>
+      <a href="#features" class="cta-button">Explore Features</a>
+    </div>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="logo.png" alt="Lumo Logo" class="logo" />
-    <h1>Bring Order to Your Day — Elegantly.</h1>
-    <p class="subhead">The LumoBoard: Your AI-Powered Daily Assistant</p>
-    <a href="#features" class="cta-button">Learn More</a>
-    <img src="home.png" alt="LumoBoard in a modern home" class="hero-image" />
-  </section>
-
-  <!-- Scroll Section: Features with Mockups -->
-  <section class="features" id="features">
-    <div class="feature-block">
-      <img src="home.png" alt="Lumo in Living Room" class="feature-img" />
+  <section id="features" class="features">
+    <div class="feature">
+      <img src="home1.png" alt="Lumo in kitchen" />
       <div class="feature-text">
-        <h2>Seamless Scheduling</h2>
-        <p>Sync your calendar and stay on track — all from your wall.</p>
+        <h2>Smart Scheduling</h2>
+        <p>Visual calendar integration directly on your wall.</p>
       </div>
     </div>
 
-    <div class="feature-block reverse">
-      <img src="home.png" alt="Lumo in Office" class="feature-img" />
+    <div class="feature reverse">
+      <img src="home2.png" alt="Lumo in office" />
       <div class="feature-text">
-        <h2>Daily Quotes & Reminders</h2>
-        <p>Get inspired every morning with curated motivation and voice-activated prompts.</p>
+        <h2>AI-Powered Motivation</h2>
+        <p>Daily quotes and affirmations pulled from books and films.</p>
       </div>
     </div>
 
-    <div class="feature-block">
-      <img src="home.png" alt="Lumo by Entryway" class="feature-img" />
+    <div class="feature">
+      <img src="home3.png" alt="Lumo in bedroom" />
       <div class="feature-text">
-        <h2>Wake Up Right</h2>
-        <p>Use Lumo’s alarm and morning animations to start your day focused and refreshed.</p>
+        <h2>Calm Starts</h2>
+        <p>Wake up with gentle visuals and built-in reminders.</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Lumo Technologies. All rights reserved.</p>
   </footer>
-
-  <script>
-    window.addEventListener("load", () => {
-      const overlay = document.querySelector('.intro-overlay');
-      setTimeout(() => {
-        overlay.classList.add('hide');
-      }, 2000);
-    });
-  </script>
 </body>
 </html>
